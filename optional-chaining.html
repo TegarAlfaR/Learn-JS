@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        const person = {
+            address: {
+                country: ""
+            }
+        }
+
+        let data = person?.address?.country;
+        if (data.length < 1) {
+            document.write('<p>tes</p>')
+            document.write('<p>data string kosong</p>')
+            document.write('<p>tes</p>')
+        } else {
+            document.write('<p>tes</p>')
+            document.write(`<h1>${data}</h1>`)
+            document.write('<p>tes</p>')
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
