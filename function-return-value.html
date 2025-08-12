@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function hello(firstName, lastName) {
+            const say = `Heloo ${firstName} ${lastName}`
+            return say
+        }
+
+        const result = hello("tegar", "rizzi")
+        document.writeln(`<h1>${result}</h1>`)
+
+
+        function isContain(array, searchValue) {
+            for (const element of array) {
+                if (element === searchValue) {
+                    return true
+                }
+            }
+            return false
+        }
+
+        const hasil = isContain([1, 2, 3, 4, 5, 6, 7, 8, 9], 5)
+        document.write(`<h1>${hasil}</h1>`)
+    </script>
+</body>
+
+</html>
