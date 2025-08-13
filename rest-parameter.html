@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sum(name, ...data) {
+            let total = 0
+            for (const item of data) {
+                total += item
+            }
+            document.writeln(`<p>total ${name} is ${total}</p>`)
+        }
+
+        sum("orange", 10, 203, 40, 234, 46, 7, 2, 36, 3, 2, 6, 3, 6262)
+        sum('apple')
+        sum("kiwi", "10")
+        sum("kiwi", "helo")
+        sum("banana", null)
+
+        const arr = [10, 20, 30, 40, 50]
+        // ini tidak bisa
+        sum("tes", arr)
+        // yg ini baru bisa
+        sum("cihuy", ...arr)
+    </script>
+</body>
+
+</html>

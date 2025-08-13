@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let say = function (name) {
+            document.writeln(`<p>heloo ${name}</p>`)
+        }
+
+        say("Tegar")
+
+        // contoh yg lebih lagi
+
+        function giveMeName(callback) {
+            callback("CIHUUUY")
+        }
+        giveMeName(function (name2) {
+            document.writeln(`<p>helooooo ${name2}</p>`)
+        })
+    </script>
+</body>
+
+</html>

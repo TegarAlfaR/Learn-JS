@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let counter = 0
+
+        function hitMe() {
+            counter++
+        }
+
+        hitMe()
+        hitMe()
+        hitMe()
+
+        document.writeln(`<p>${counter}</p>`)
+
+        // function cek() {
+        //     let count = 111
+        // }
+        // document.writeln(`<p> tess ${count}</p>`)
+
+
+        // nested function
+        function first() {
+            let firstFun = "tesss"
+
+            function second() {
+                document.writeln(`<p>${firstFun}</p>`)
+
+            }
+
+            second()
+        }
+
+        first()
+
+    </script>
+</body>
+
+</html>
