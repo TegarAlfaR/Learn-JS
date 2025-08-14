@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // factorial looping
+        function factorial(value) {
+            let result = 1
+            for (let i = 1; i <= value; i++) {
+                result *= i
+            }
+            return result
+        }
+
+        document.writeln(`<p>${factorial(2)}</p>`)
+
+        // factorial recursive
+        function factorialRecursive(val) {
+            if (val === 1) {
+                return 1
+            } else {
+                return val * factorialRecursive(val - 1)
+            }
+        }
+        document.writeln(`<p>${factorialRecursive(3)}</p>`)
+    </script>
+</body>
+
+</html>
