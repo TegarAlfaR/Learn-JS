@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // const sayHello = (name) => {
+        //     console.log(`Hello ${name}`)
+        // }
+
+        // const sayHello = (name) => console.log(`Hello ${name}`)
+
+        // bisa kek gini juga
+        const sayHello = name => console.log(`Hello ${name}`)
+
+        sayHello("Tegar")
+
+        // const sum = (a, b) => {
+        //     return a + b
+        // }
+
+        const sum = (a, b) => a + b;
+
+        console.info(sum(10, 10))
+
+        // bisa kayak anonymus func
+
+        function giveMeName(callback) {
+            callback("tegar")
+        }
+
+        giveMeName(name => console.log(`hello ${name}`))
+
+    </script>
+</body>
+
+</html>
