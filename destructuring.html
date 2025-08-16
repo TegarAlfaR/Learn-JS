@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // destructure array
+        const names = ["tegar", "alfa", "rizzi", "budi", "anwar"]
+        const [firstName, middleName, lastName, ...others] = names
+
+        console.info(firstName)
+        console.info(middleName)
+        console.info(lastName)
+        console.info(others)
+
+        // destructure object
+        const person = {
+            nama: "Tegar",
+            addres: {
+                jalan: "jalan hj oom",
+                kabupaten: "bogor"
+            },
+            gender: "laki-laki",
+            hobi: "rebahan",
+            kata: "cihuyy"
+        }
+
+        const { nama, hobi, addres: { jalan }, ...lain } = person
+        console.info(nama)
+        console.info(hobi)
+        console.info(jalan)
+        console.info(lain)
+
+    </script>
+</body>
+
+</html>

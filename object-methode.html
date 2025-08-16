@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            name: "Tegar",
+            hello: function (name) {
+                document.writeln(`<p>Hello ...  ${name}</p>`)
+            }
+        }
+
+        person.hello("Cihuyyy")
+
+        // nambahin function ke object
+
+        const people = {
+            name: "tegar"
+        }
+
+        people.sayHello = function (nama) {
+            document.writeln(`<p>haiiii ...  ${nama}</p>`)
+        }
+
+        people.sayHello("uiaiuiiiai")
+    </script>
+</body>
+
+</html>

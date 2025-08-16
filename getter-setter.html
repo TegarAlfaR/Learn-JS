@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const person = {
+            firstName: "tegar",
+            lastName: "rizzi",
+
+            // getter
+            get fullName() {
+                document.writeln(`helo my name ${this.firstName} ${this.lastName}`)
+            },
+
+            // setter
+            set fullName2(val) {
+                const arr = val.split(" ")
+                this.firstName = arr[0],
+                    this.lastName = arr[1]
+            }
+        }
+
+        person.fullName
+
+        person.fullName2 = "budi sudarsono"
+        document.writeln(`<p>${person.firstName}</p>`)
+        document.writeln(`<p>${person.lastName}</p>`)
+
+    </script>
+</body>
+
+</html>
